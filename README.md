@@ -1,6 +1,37 @@
 # HRnet
 Welcome to HRnet! This is our company's internal application to create and view employee records.
 
+ ## Components
+ 
+ * EmployeeList component: Displays a list of employees with filtering and pagination
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
