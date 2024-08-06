@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import Modal from 'react-modal';
+import { Modal } from '@engydev/modalreact';
+import '@engydev/modalreact/dist/style.css';
 import states from './states'; 
 import './EmployeeForm.css'; 
 
@@ -107,7 +108,7 @@ const EmployeeForm = () => {
 
         <button type="submit" className="save-button">Save</button>
       </form>
-      <Modal isOpen={isModalOpen} onRequestClose={() => setIsModalOpen(false)} className="modal">
+      <Modal isOpen={isModalOpen} closeModal={() => setIsModalOpen(false)} className="modal">
         <div>Employee Created!</div>
         <button onClick={() => setIsModalOpen(false)}>Close</button>
       </Modal>
